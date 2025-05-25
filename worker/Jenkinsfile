@@ -32,7 +32,7 @@ pipeline {
 
         stage("package") {
             when {
-                allof {
+                allOf {
                     branch 'master'
                     changeset "**/worker/**"
                 }
